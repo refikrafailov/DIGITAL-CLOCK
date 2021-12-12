@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+body {
+  font-family: "Monoton", cursive;
+  overflow: hidden;
+  background: conic-gradient(
+    from -90deg at 25% 115%,
+    #ff0000,
+    #ff0066,
+    #ff00cc,
+    #cc00ff,
+    #6600ff,
+    #0000ff,
+    #0000ff,
+    #0000ff,
+    #0000ff
+  );
+}
+
+.container {
+  margin: auto;
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digitalClock {
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  color: #000;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.digitalClock h1 {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 11rem;
+}
+
+@media (max-width: 1910px) {
+  .digitalClock h1 {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 1580px) {
+  .digitalClock h1 {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 1280px) {
+  .digitalClock h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 973px) {
+  #bar1,
+  #bar2 {
+    display: none;
+  }
+  .digitalClock {
+    text-align: center;
+  }
+  .digitalClock h1 {
+    display: block;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .digitalClock h1 {
+    font-size: 3rem;
+  }
+}
